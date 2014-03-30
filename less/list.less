@@ -1,0 +1,33 @@
+ul {
+    list-style: none;
+    
+    li {
+        position: relative;
+        margin: 2px 0px 4px;
+        padding: 4px 0px 6px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        &:before {
+            color: rgba(255,255,255,0.75);
+            border-radius: 10px;
+            background: #444444;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            text-indent: 0px;
+            letter-spacing: 0;
+            .icon(@fa-var-star);
+            font-size: 13px;
+            margin: 0px 10px 0px 0px;
+            line-height: 20px;
+            position: absolute;
+            left: -28px;
+            top: 6px;
+        }
+    }
+    
+}
